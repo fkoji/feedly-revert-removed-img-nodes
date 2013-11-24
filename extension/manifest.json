@@ -1,6 +1,6 @@
 {
   "name": "Feedly Revert Removed Img Nodes",
-  "version": "0.2",
+  "version": "0.3",
   "manifest_version": 2,
 
   "description": "Revert removed img nodes on Feedly.",

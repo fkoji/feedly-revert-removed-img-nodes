@@ -1,5 +1,4 @@
-document.body.addEventListener("DOMNodeRemoved", function(e)
-{
+document.body.addEventListener("DOMNodeRemoved", function(e) {
     var el = e.target;
 
     if (el.nodeType !== 1) return;
@@ -8,8 +7,7 @@ document.body.addEventListener("DOMNodeRemoved", function(e)
     el.removeAttribute('style');
     el.removeAttribute('data-feedly-blocked');
 
-    setTimeout(function()
-    {
-        var res = e.relatedNode.appendChild(el);
+    setTimeout(function() {
+        e.relatedNode.appendChild(el);
     }, 1000);
 }, false);
